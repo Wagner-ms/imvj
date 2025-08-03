@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis CSS */
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #534bae;
+    --accent-color: #gold;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand .logo {
+    height: 70px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('../assets/images/I.M.V.J.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    margin-top: -76px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* sobra no hero section*/
+    /*background: rgba(0, 0, 0, 0.5);*/
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.1rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 80px;
+    max-width: 195px;
+    
+   
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Seção de Cultos */
+.culto-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.culto-card:hover {
+    transform: translateY(-5px);
+}
+
+.culto-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.culto-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Seção de Eventos */
+.evento-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.evento-data {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.evento-data .dia {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.evento-data .mes {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.evento-info {
+    padding: 1rem;
+}
+
+.evento-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Seção do Versículo */
+.versiculo {
+    background-color: var(--light-bg);
+}
+
+.versiculo-texto {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.versiculo-referencia {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-bg);
+    color: white;
+}
+
+.footer h5 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Estilos para o mapa no footer */
+.map-container {
+    width: 70%;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container iframe {
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .lead {
+        font-size: 1.2rem;
+    }
+
+    .culto-card {
+        margin-bottom: 1rem;
+    }
+
+    /* Ajustes do Footer */
+    .footer {
+        text-align: center;
+    }
+
+    .footer .col-lg-4 {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer h5 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .map-container {
+        height: 200px;
+        margin: 0 auto;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .social-links a {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    /* Ajustes dos Cards */
+    .evento-card {
+        margin-bottom: 1rem;
+    }
+
+    .evento-data {
+        min-width: 80px;
+    }
+
+    .evento-info {
+        padding: 0.75rem;
+    }
+
+    .evento-info h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Ajustes do Versículo */
+    .versiculo-texto {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    .versiculo-texto {
+        font-size: 1.1rem;
+    }
+
+    .footer h5 {
+        font-size: 1.1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .versiculo-texto {
+        font-size: 1.8rem;
+    }
+}
+
+/* Animações */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Utilitários */
+.section-padding {
+    padding: 5rem 0;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+/* Estilos para páginas internas */
+.page-header {
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 76px;
+    padding: 4rem 0;
+}
+
+/* Estilos para a página Sobre */
+.historia .img-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.visao-valores .card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.visao-valores .card:hover {
+    transform: translateY(-5px);
+}
+
+.lideranca .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a página Ministérios */
+.ministerios .img-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.ministerios h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.ministerios ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para a página Programação */
+.calendario .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendario .card-title {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.calendario ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.calendario ul li:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para a página Contato */
+.contato .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contato .social-links {
+    margin-top: 2rem;
+}
+
+.contato .social-links a {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.contato .social-links a:hover {
+    color: var(--secondary-color);
+}
+
+.map-container-large {
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container-large iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsividade para páginas internas */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 3rem 0;
+    }
+
+    .historia .img-container {
+        margin-top: 2rem;
+    }
+
+    .ministerios .img-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .calendario .card {
+        margin-bottom: 1rem;
+    }
+
+    .map-container-large {
+        height: 300px;
+    }
+}
+
+/* Seção de Vídeo */
+.video-destaque {
+    background-color: var(--light-bg);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #000; /* Fundo preto enquanto o vídeo carrega */
+}
+
+/* Responsividade do vídeo */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .video-destaque h2 {
+        font-size: 2rem;
+    }
+    
+    .video-destaque .lead {
+        font-size: 1.1rem;
+    }
+}
+
+/* Estilos para a página EBD Online */
+.page-header {
+    background-color: var(--light-bg);
+    padding-top: 100px;
+    margin-top: 0;
+}
+
+.ebd-intro {
+    margin-bottom: 2rem;
+}
+
+.ebd-intro .img-container {
+    text-align: center;
+}
+
+.aulas-vivo .card {
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.aulas-vivo .card:hover {
+    transform: translateY(-5px);
+}
+
+.aulas-vivo .badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.aulas-gravadas .card {
+    transition: transform 0.3s ease;
+}
+
+.aulas-gravadas .card:hover {
+    transform: translateY(-5px);
+}
+
+.aulas-gravadas .card-img-top {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aulas-gravadas .badge {
+    margin-right: 0.5rem;
+}
+
+.material-didatico .card {
+    transition: transform 0.3s ease;
+}
+
+.material-didatico .card:hover {
+    transform: translateY(-5px);
+}
+
+.map-container {
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para seção de destaque da EBD Online na página inicial */
+.ebd-destaque {
+    background-color: var(--light-bg);
+}
+
+.ebd-destaque .card {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.ebd-destaque .card:hover {
+    transform: translateY(-10px);
+}
+
+.ebd-destaque .bg-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+}
+
+.ebd-destaque h2 {
+    color: var(--primary-color);
+}
+
+/* Estilos para Autenticação e Área do Aluno */
+.login-area .card {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.login-area .bg-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+}
+
+.login-area .nav-tabs .nav-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 1rem;
+}
+
+.login-area .nav-tabs .nav-link.active {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.login-area .list-unstyled li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.login-area .list-unstyled li i {
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+}
+
+/* Dashboard da área do aluno */
+.dashboard-summary .card {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-summary .card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-summary .fa-3x {
+    margin-bottom: 1rem;
+}
+
+.next-class .card {
+    transition: transform 0.3s ease;
+}
+
+.next-class .card:hover {
+    transform: translateY(-5px);
+}
+
+.my-classes .card {
+    transition: transform 0.3s ease;
+}
+
+.my-classes .card:hover {
+    transform: translateY(-5px);
+}
+
+.my-classes .progress {
+    background-color: #e9ecef;
+}
+
+/* Fórum de discussão */
+.topic-stats span {
+    font-size: 0.875rem;
+}
+
+.forum .card {
+    transition: transform 0.3s ease;
+}
+
+.forum .card:hover {
+    transform: translateY(-5px);
+}
+
+.avatar i {
+    color: var(--primary-color);
+}
+
+.reply-content {
+    word-wrap: break-word;
+}
+
+.forum .badge {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+/* Modal de vídeo */
+#videoModal .modal-content {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#videoModal .modal-body {
+    padding: 0;
+}
+
+#videoModal .ratio {
+    min-height: 400px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 767.98px) {
+    .login-area .card {
+        border-radius: 10px;
+    }
+    
+    .next-class .btn-lg {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .forum .d-flex {
+        flex-direction: column;
+    }
+    
+    .forum .badge {
+        margin-top: 0.5rem;
+        align-self: flex-start;
+    }
+}

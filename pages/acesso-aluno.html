@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso de Alunos - Igreja Missionária Vale do Jaboque</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo Igreja" class="logo" width="70" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ministerios.html">Ministérios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programacao.html">Programação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ebd-online.html">EBD Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="acesso-aluno.html">Área do Aluno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header da Página -->
+    <header class="page-header py-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Área do Aluno</h1>
+                    <p class="lead">Acesse sua conta para participar da nossa EBD Online</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Login/Cadastro -->
+    <section class="login-area py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="card shadow-lg border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="row g-0">
+                                <!-- Coluna esquerda (ilustração/informações) -->
+                                <div class="col-lg-5 d-none d-lg-block bg-primary text-white">
+                                    <div class="p-5 d-flex flex-column h-100 justify-content-center">
+                                        <div class="text-center mb-5">
+                                            <i class="fas fa-users fa-4x mb-4"></i>
+                                            <h3 class="mb-4">Benefícios da sua conta</h3>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><i class="fas fa-check-circle me-2"></i> Acesso a materiais exclusivos</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle me-2"></i> Participação em fóruns de discussão</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle me-2"></i> Certificados de conclusão</li>
+                                            <li class="mb-3"><i class="fas fa-check-circle me-2"></i> Acompanhamento do seu progresso</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Coluna direita (formulários) -->
+                                <div class="col-lg-7 p-4 p-md-5">
+                                    <!-- Abas Login/Cadastro -->
+                                    <ul class="nav nav-tabs nav-fill mb-4" id="authTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab">Entrar</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab">Cadastrar</button>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- Conteúdo das Abas -->
+                                    <div class="tab-content" id="authTabsContent">
+                                        <!-- Aba de Login -->
+                                        <div class="tab-pane fade show active" id="login" role="tabpanel">
+                                            <form id="loginForm">
+                                                <div class="mb-3">
+                                                    <label for="loginEmail" class="form-label">Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                        <input type="email" class="form-control" id="loginEmail" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="loginPassword" class="form-label">Senha</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                                        <input type="password" class="form-control" id="loginPassword" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                                    <label class="form-check-label" for="rememberMe">Lembrar meus dados</label>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Entrar</button>
+                                                </div>
+                                                <div class="text-center mt-3">
+                                                    <a href="#" class="text-decoration-none" id="forgotPassword">Esqueci minha senha</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        
+                                        <!-- Aba de Cadastro -->
+                                        <div class="tab-pane fade" id="register" role="tabpanel">
+                                            <form id="registerForm">
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="firstName" class="form-label">Nome</label>
+                                                        <input type="text" class="form-control" id="firstName" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="lastName" class="form-label">Sobrenome</label>
+                                                        <input type="text" class="form-control" id="lastName" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="registerEmail" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="registerEmail" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="phone" class="form-label">Telefone</label>
+                                                    <input type="tel" class="form-control" id="phone">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="registerPassword" class="form-label">Senha</label>
+                                                        <input type="password" class="form-control" id="registerPassword" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="confirmPassword" class="form-label">Confirme a Senha</label>
+                                                        <input type="password" class="form-control" id="confirmPassword" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                                                    <label class="form-check-label" for="termsCheck">
+                                                        Concordo com os <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">termos e condições</a>
+                                                    </label>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Criar Conta</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal para Termos e Condições -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Termos e Condições</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Política de Privacidade</h6>
+                    <p>Os dados fornecidos serão utilizados exclusivamente para fins educacionais e de comunicação relacionados à Escola Bíblica Dominical Online da Igreja Missionária Vale do Jaboque.</p>
+                    
+                    <h6>Uso das Informações</h6>
+                    <p>Suas informações pessoais serão usadas para:</p>
+                    <ul>
+                        <li>Identificação e acesso à plataforma</li>
+                        <li>Comunicações sobre aulas e eventos</li>
+                        <li>Registro de progresso nos estudos</li>
+                    </ul>
+                    
+                    <h6>Compromisso do Aluno</h6>
+                    <p>Ao se cadastrar, você se compromete a:</p>
+                    <ul>
+                        <li>Fornecer informações verdadeiras</li>
+                        <li>Não compartilhar sua senha com terceiros</li>
+                        <li>Utilizar o material com respeito aos direitos autorais</li>
+                        <li>Participar das discussões de forma respeitosa</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Esqueci Minha Senha -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Recuperar Senha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Informe seu email cadastrado para receber instruções de recuperação de senha.</p>
+                    <form id="forgotPasswordForm">
+                        <div class="mb-3">
+                            <label for="recoveryEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="recoveryEmail" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Localização</h5>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.2860098047745!2d-59.99547032625879!3d-3.0176199399669503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c19114d59af91%3A0x96f0a61ee2869dd9!2sIGREJA%20MISSIONARIA%20VALE%20DO%20JABOQUE%20(%20I.M.V.J%20)!5e0!3m2!1spt-BR!2sbr!4v1741288668726!5m2!1spt-BR!2sbr" 
+                            style="border:0; width: 90%; height: 100%;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contato</h5>
+                    <p>
+                        <i class="fas fa-phone"></i> (92) 99440-0639<br>
+                        <i class="fas fa-envelope"></i> central.imvj@gmail.com
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100094500217969&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/imvjcentral/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/imvjcentral/reel/C9-qV_UyOXA/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Igreja Missionária Vale do Jaboque. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html> 

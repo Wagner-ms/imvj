@@ -1,0 +1,26 @@
+igreja-vale-jaboque/
+│
+├── assets/
+│   ├── images/         # Imagens do site
+│   ├── fonts/          # Fontes personalizadas
+│   └── icons/          # Ícones e favicon
+│
+├── css/
+│   ├── style.css      # Estilos principais
+│   ├── components/    # Estilos de componentes específicos
+│   └── responsive.css # Estilos para responsividade
+│
+├── js/
+│   ├── main.js        # JavaScript principal
+│   ├── components/    # Componentes JavaScript
+│   └── utils/         # Funções utilitárias
+│
+├── pages/             # Páginas adicionais do site
+│   ├── sobre.html
+│   ├── ministerios.html
+│   ├── programacao.html
+│   └── contato.html
+│
+├── index.html         # Página inicial
+├── README.md          # Documentação do projeto
+└── .gitignore        # Arquivos a serem ignorados pelo git

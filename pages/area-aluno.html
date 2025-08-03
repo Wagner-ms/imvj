@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno - Igreja Missionária Vale do Jaboque</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo Igreja" class="logo" width="70" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ministerios.html">Ministérios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programacao.html">Programação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ebd-online.html">EBD Online</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i><span id="userNameDisplay">Minha Conta</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item active" href="area-aluno.html">Meus Cursos</a></li>
+                            <li><a class="dropdown-item" href="#" id="editProfileBtn">Editar Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logoutBtn">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header da Página -->
+    <header class="page-header py-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4">Bem-vindo(a), <span id="welcomeUserName">Aluno</span>!</h1>
+                    <p class="lead">Acesse seus cursos e materiais da EBD Online</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Progresso -->
+            <section class="dashboard-summary mb-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-book-open fa-3x text-primary mb-3"></i>
+                                <h3>3</h3>
+                                <p class="text-muted">Aulas Disponíveis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-tasks fa-3x text-primary mb-3"></i>
+                                <h3>1</h3>
+                                <p class="text-muted">Aulas Concluídas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                                <h3>0</h3>
+                                <p class="text-muted">Certificados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Próxima Aula -->
+            <section class="next-class mb-5">
+                <h2 class="mb-4">Próxima Aula</h2>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 text-center mb-3 mb-lg-0">
+                                <div class="bg-primary text-white rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-play fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 mb-3 mb-lg-0">
+                                <h4>O Livro de Provérbios - Lição 2</h4>
+                                <p class="text-muted mb-0">Sabedoria nos Relacionamentos</p>
+                                <div class="mt-2">
+                                    <span class="badge bg-info me-2">Domingo, 08:00</span>
+                                    <span class="badge bg-secondary">40 minutos</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 text-lg-end">
+                                <a href="#" class="btn btn-primary btn-lg">Assistir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Minhas Aulas -->
+            <section class="my-classes mb-5">
+                <h2 class="mb-4">Minhas Aulas</h2>
+                <div class="row">
+                    <!-- Aula 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-success">Concluída</span>
+                                    <span class="text-muted small">1º Trimestre 2025</span>
+                                </div>
+                                <h5 class="card-title">Introdução ao Livro de Provérbios</h5>
+                                <p class="card-text">Uma visão geral do livro de Provérbios e sua relevância para o cristão contemporâneo.</p>
+                                <div class="progress mb-3" style="height: 5px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="aula1">Rever Aula</button>
+                                    <a href="#" class="btn btn-outline-secondary">Material</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aula 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-warning text-dark">Em andamento</span>
+                                    <span class="text-muted small">1º Trimestre 2025</span>
+                                </div>
+                                <h5 class="card-title">Sabedoria nos Relacionamentos</h5>
+                                <p class="card-text">Como aplicar a sabedoria bíblica em nossos relacionamentos familiares e interpessoais.</p>
+                                <div class="progress mb-3" style="height: 5px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="aula2">Continuar</button>
+                                    <a href="#" class="btn btn-outline-secondary">Material</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aula 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-secondary">Não iniciada</span>
+                                    <span class="text-muted small">1º Trimestre 2025</span>
+                                </div>
+                                <h5 class="card-title">Princípios Financeiros em Provérbios</h5>
+                                <p class="card-text">Os princípios bíblicos para administração financeira segundo o livro de Provérbios.</p>
+                                <div class="progress mb-3" style="height: 5px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="aula3">Iniciar</button>
+                                    <a href="#" class="btn btn-outline-secondary">Material</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fórum de Discussão -->
+            <section class="forum mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Fórum de Discussão</h2>
+                    <a href="forum-discussao.html" class="btn btn-primary">Ver Todos os Tópicos</a>
+                </div>
+                
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="avatar me-3">
+                                <i class="fas fa-user-circle fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Professor João</h5>
+                                <small class="text-muted">Há 2 dias</small>
+                            </div>
+                        </div>
+                        <h5>Reflexão sobre Provérbios 3:5-6</h5>
+                        <p>Caros alunos, gostaria que compartilhassem suas reflexões sobre o versículo: "Confie no Senhor de todo o seu coração e não se apoie em seu próprio entendimento; reconheça o Senhor em todos os seus caminhos, e ele endireitará as suas veredas."</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-muted">5 respostas</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver Discussão</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="avatar me-3">
+                                <i class="fas fa-user-circle fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Maria Silva</h5>
+                                <small class="text-muted">Há 5 dias</small>
+                            </div>
+                        </div>
+                        <h5>Dúvida sobre o contexto histórico</h5>
+                        <p>Olá a todos! Estou estudando o contexto histórico do livro de Provérbios e gostaria de saber mais sobre a influência da cultura da época na escrita de Salomão. Alguém tem referências para compartilhar?</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-muted">3 respostas</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Ver Discussão</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal de Vídeo -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Aula</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success" id="markAsCompleted">Marcar como Concluída</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Novo Tópico no Fórum -->
+    <div class="modal fade" id="newTopicModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Novo Tópico de Discussão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="newTopicForm">
+                        <div class="mb-3">
+                            <label for="topicTitle" class="form-label">Título</label>
+                            <input type="text" class="form-control" id="topicTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="topicContent" class="form-label">Conteúdo</label>
+                            <textarea class="form-control" id="topicContent" rows="5" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="topicCategory" class="form-label">Categoria</label>
+                            <select class="form-select" id="topicCategory">
+                                <option value="duvida">Dúvida</option>
+                                <option value="reflexao">Reflexão</option>
+                                <option value="aplicacao">Aplicação Prática</option>
+                                <option value="testemunho">Testemunho</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="submitTopic">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Editar Perfil -->
+    <div class="modal fade" id="editProfileModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Perfil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProfileForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="editFirstName" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="editFirstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="editLastName" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="editLastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editEmail" required readonly>
+                            <small class="text-muted">O email não pode ser alterado</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editPhone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="editPhone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editPassword" class="form-label">Nova Senha (deixe em branco para manter a atual)</label>
+                            <input type="password" class="form-control" id="editPassword">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmEditPassword" class="form-label">Confirme a Nova Senha</label>
+                            <input type="password" class="form-control" id="confirmEditPassword">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="saveProfileChanges">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Localização</h5>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.2860098047745!2d-59.99547032625879!3d-3.0176199399669503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c19114d59af91%3A0x96f0a61ee2869dd9!2sIGREJA%20MISSIONARIA%20VALE%20DO%20JABOQUE%20(%20I.M.V.J%20)!5e0!3m2!1spt-BR!2sbr!4v1741288668726!5m2!1spt-BR!2sbr" 
+                            style="border:0; width: 90%; height: 100%;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contato</h5>
+                    <p>
+                        <i class="fas fa-phone"></i> (92) 99440-0639<br>
+                        <i class="fas fa-envelope"></i> central.imvj@gmail.com
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100094500217969&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/imvjcentral/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/imvjcentral/reel/C9-qV_UyOXA/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Igreja Missionária Vale do Jaboque. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/student-area.js"></script>
+</body>
+</html> 
